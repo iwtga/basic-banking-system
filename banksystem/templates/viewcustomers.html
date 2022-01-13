@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+<div class="main-content">
+    <a class="head" href="{{ url_for('index') }}"><h1>ABC Bank</h1></a>
+    <br>
+    {% if custs %}
+        <table class="table table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Balance</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for cust in custs %}
+                <tr>
+                    <td>{{ cust.name }}</td>
+                    <td>{{ cust.email }}</td>
+                    <td>{{ cust.balance }}</td>
+                    <td><a href="/user/{{ cust.id }}">View</a></td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <h4>No Customers to Display!</h4>
+    {% endif %}
+</div>
+{% endblock %}
