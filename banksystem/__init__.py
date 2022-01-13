@@ -15,5 +15,4 @@ app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
 db = SQLAlchemy(app)
 
-
 from banksystem import views, models
