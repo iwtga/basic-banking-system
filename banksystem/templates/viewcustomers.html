@@ -10,6 +10,7 @@
         <table class="table table-bordered">
             <thead class="table-dark">
                 <tr>
+                    <th scope="col">No.</th>
                     <th scope="col">Name</th>
                     <th scope="col">Email</th>
                     <th scope="col">Balance</th>
@@ -19,6 +20,7 @@
             <tbody>
             {% for cust in custs %}
                 <tr>
+                    <td>{{ loop.index }}</td>
                     <td>{{ cust.name }}</td>
                     <td>{{ cust.email }}</td>
                     <td>{{ cust.balance }}</td>
