@@ -10,7 +10,7 @@ class Customer(db.Model):
     received = db.relationship('Transfers', backref='receiver', foreign_keys='[transfers.c.receiver_id]')
 
     def __repr__(self) -> str:
-        return f"<Customer: ({self.id}, {self.name}, {self.email}, {self.balance})>"
+        return f"<Customer: {self.name}>"
 
 class Transfers(db.Model):
     id = db.Column(db.Integer, primary_key=True)
