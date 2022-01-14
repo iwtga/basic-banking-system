@@ -3,4 +3,34 @@
 {% block title %}{{ title }}{% endblock %}
 
 {% block body %}
+<div class="main-content">
+    <h1>Transfers:</h1>
+    <br>
+    {% if transfs %}
+        <table class="table table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">No.</th>
+                    <th scope="col">Sender</th>
+                    <th scope="col">Receiver</th>
+                    <th scope="col">Amount ($)</th>
+                    <th scope="col">Timestamp</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for cust in custs %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ transfs.sender }}</td>
+                    <td>{{ transfs.receiver }}</td>
+                    <td>{{ transfs.amount }}</td>
+                    <td>{{ transfs.timestamp }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <h4>No Transfers to Display!</h4>
+    {% endif %}
+</div>
 {% endblock %}
