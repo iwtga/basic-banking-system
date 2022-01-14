@@ -13,6 +13,10 @@ def customers():
     print(custs)
     return render_template('viewcustomers.html', title='Customers', custs=custs)
 
+@app.route('/transfers')
+def transfers():
+    return render_template('transfers.html', title="Transfers")
+
 @app.route('/users/<int:id>')
 def user(id):
     form = TransferForm()

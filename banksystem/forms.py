@@ -1,4 +1,3 @@
-from unicodedata import name
 from flask_wtf import FlaskForm
 from wtforms_sqlalchemy.fields import QuerySelectField
 from banksystem.models import Customer

@@ -4,9 +4,7 @@
 
 {% block body %}
 <div class="user-content">
-    <a class="head" href="{{ url_for('index') }}">
-        <h1>Customer Profile:</h1>
-    </a>
+    <h1>Customer Profile:</h1>
     <br>
     <form method="POST" action="">
         {{ form.hidden_tag() }}
@@ -41,10 +39,16 @@
                 </td>
                 <td>{{ form.tranferto }}</td>
             </tr>
+            <tr>
+                <td>
+                    <h4>Amount:</h4>
+                </td>
+                <td>{{ form. }}</td>
+            </tr>
         </table>
         <br>
         <br>
-        <input type="submit">
+        <input type="submit" value="Tranfer">
     </form>
 </div>
 {% endblock %}
