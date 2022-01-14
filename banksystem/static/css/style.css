@@ -13,3 +13,19 @@
     text-decoration: none;
     color: inherit;
 }
+
+.user-content {
+    text-align: center;
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 6%;
+}
+
+.user {
+    margin-top: 5%;
+}
+
+table.user > tr,td {
+    text-align: left;
+    padding: 15px;
+}

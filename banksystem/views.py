@@ -19,4 +19,4 @@ def user(id):
     cust = Customer.query.filter_by(id=id).first()
     if form.validate_on_submit():
         pass
-    return render_template('user.html', cust=cust, form=form)
+    return render_template('user.html', cust=cust, form=form, title=cust.name)
