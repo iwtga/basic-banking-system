@@ -11,20 +11,20 @@
             <thead class="table-dark">
                 <tr>
                     <th scope="col">No.</th>
-                    <th scope="col">Sender</th>
-                    <th scope="col">Receiver</th>
+                    <th scope="col">Sender ID</th>
+                    <th scope="col">Receiver ID</th>
                     <th scope="col">Amount ($)</th>
                     <th scope="col">Timestamp</th>
                 </tr>
             </thead>
             <tbody>
-            {% for cust in custs %}
+            {% for transf in transfs %}
                 <tr>
                     <td>{{ loop.index }}</td>
-                    <td>{{ transfs.sender }}</td>
-                    <td>{{ transfs.receiver }}</td>
-                    <td>{{ transfs.amount }}</td>
-                    <td>{{ transfs.timestamp }}</td>
+                    <td>{{ transf.sender }}</td>
+                    <td>{{ transf.receiver }}</td>
+                    <td>{{ transf.amount }}</td>
+                    <td>{{ transf.timestamp }}</td>
                 </tr>
             {% endfor %}
             </tbody>
