@@ -24,8 +24,7 @@ def user(id):
     if form.validate_on_submit():
         print(form.data)
         amount = float(form.data['amount'])
-        transferto = form.data['transferto']
-        recipient = Customer.query.filter_by(id=int(transferto)).first()
+        recipient = form.data['transferto']
         recipient.balance += amount
         cust.balance -= amount
         try:
