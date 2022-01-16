@@ -67,6 +67,15 @@ table.user > tr,td {
     transition: transform .3s;
 }
 
-.home-btn:hover {
-    transform: scale(1.25);
+.home-btn:hover,.t-btn:hover {
+    transform: scale(1.15);
+}
+
+.t-btn {
+    margin-top: 5px;
+    font-size: 175%;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    transition: transform .3s;
 }
