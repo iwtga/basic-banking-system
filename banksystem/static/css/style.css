@@ -29,3 +29,18 @@ table.user > tr,td {
     text-align: left;
     padding: 10px;
 }
+
+.rbuttons {
+    padding: 5px 0;
+    font-size: large;
+    margin: 0 10px;
+}
+
+.brandname {
+    margin: 0 15px;
+    font-size: 150%;
+}
+
+.rbuttons:hover {
+    background-color:mediumpurple;
+}
