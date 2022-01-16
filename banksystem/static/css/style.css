@@ -44,3 +44,17 @@ table.user > tr,td {
 .rbuttons:hover {
     background-color:mediumpurple;
 }
+
+.section1 {
+    width: 50%;
+    background-color: red;
+    height: 100vh;
+    float: left;
+}
+
+.section2 {
+    width: 50%;
+    background-color: blue;
+    height: 100vh;
+    float: left;
+}
