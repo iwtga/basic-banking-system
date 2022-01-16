@@ -3,12 +3,18 @@
 {% block title %}{{ title }}{% endblock %}
 
 {% block body %}
-<div class="section1">
+<div class="sections">
     <div class="main-box">
-        <img src="" alt="">
+        <img src="{{ url_for('static', filename='images/customer.png') }}" alt="customer">
+        <br>
+        <a href="{{ url_for('customers') }}"><button class="home-btn">View Customers</button></a>
     </div>
 </div>
-<div class="section2">
-
+<div class="sections">
+    <div class="main-box">
+        <img src="{{ url_for('static', filename='images/transfer.png') }}" alt="transfer" style="height: 256px;">
+        <br>
+        <a href="{{ url_for('transfers') }}"><button class="home-btn">Transfers</button></a>
+    </div>
 </div>
 {% endblock %}

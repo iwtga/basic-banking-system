@@ -45,16 +45,28 @@ table.user > tr,td {
     background-color:mediumpurple;
 }
 
-.section1 {
+.sections {
     width: 50%;
-    background-color: red;
-    height: 100vh;
+    height: 90vh;
     float: left;
+    border-right: 2px solid black; 
 }
 
-.section2 {
+.main-box {
+    text-align: center;
     width: 50%;
-    background-color: blue;
-    height: 100vh;
-    float: left;
+    margin: 125px 175px;
+}
+
+.home-btn {
+    margin-top: 20px;
+    font-size: 175%;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    transition: transform .3s;
+}
+
+.home-btn:hover {
+    transform: scale(1.25);
 }
