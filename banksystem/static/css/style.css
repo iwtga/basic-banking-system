@@ -2,6 +2,10 @@
     font-family: monospace;
 }
 
+body {
+    background-image: url('https://www.solidbackgrounds.com/images/1920x1080/1920x1080-burlywood-solid-color-background.jpg')
+}
+
 .main-content {
     text-align: center;
     width: 50%;
@@ -78,4 +82,8 @@ table.user > tr,td {
     background-color: black;
     color: white;
     transition: transform .3s;
+}
+
+.whitesmoke {
+    background-color: whitesmoke;
 }
