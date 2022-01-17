@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 * {
     font-family: monospace;
 }
@@ -86,4 +88,9 @@ table.user > tr,td {
 
 .whitesmoke {
     background-color: whitesmoke;
+}
+
+.bname {
+    font-family: 'Lobster', cursive;
+    font-size: 200%;
 }
